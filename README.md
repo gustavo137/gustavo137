@@ -42,12 +42,12 @@
   <a href="http://www.github.com/gustavo137"><img src="https://github-readme-streak-stats.herokuapp.com/?user=gustavo137&stroke=ffffff&background=1c1917&ring=0891b2&fire=0891b2&currStreakNum=ffffff&currStreakLabel=0891b2&sideNums=ffffff&sideLabels=ffffff&dates=ffffff&hide_border=true" /></a>
 </p>
 
-[![gustavo137's GitHub summary](https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=gustavo137&theme=github_dark)](https://github.com/gustavo137)
+<!-- [![gustavo137's GitHub summary](https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=gustavo137&theme=github_dark)](https://github.com/gustavo137) -->
 
 <p align="center">
-  <a href="https://github.com/gustavo137">
+  <!-- <a href="https://github.com/gustavo137">
     <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=gustavo137&theme=github_dark" alt="Repo Languages" />
-  </a>
+  </a> -->
   <a href="https://github.com/gustavo137">
     <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=gustavo137&langs_count=10&title_color=0891b2&text_color=ffffff&icon_color=0891b2&bg_color=1c1917&hide_border=true&locale=en&custom_title=Top%20Languages" alt="Top Languages" />
   </a>
