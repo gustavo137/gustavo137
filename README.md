@@ -34,12 +34,12 @@
 <a href="https://www.linkedin.com/in/gustavo-paredes-torres-8044b81a2/" target="_blank"> <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/linkedin.svg" width="32" height="32" /></a>
 </p>
 
-## Badges
+<!-- ## Badges -->
 
-### My GitHub Stats
+<!-- ### My GitHub Stats -->
 <p alingn="center">
   <!-- <a href="http://www.github.com/gustavo137"><img src="https://github-readme-stats.vercel.app/api?username=gustavo137&show_icons=true&count_private=true&title_color=0891b2&text_color=ffffff&icon_color=0891b2&bg_color=1c1917&hide_border=true" alt="gustavo137's GitHub stats" /></a> -->
-  <a href="http://www.github.com/gustavo137"><img src="https://github-readme-streak-stats.herokuapp.com/?user=gustavo137&stroke=ffffff&background=1c1917&ring=0891b2&fire=0891b2&currStreakNum=ffffff&currStreakLabel=0891b2&sideNums=ffffff&sideLabels=ffffff&dates=ffffff&hide_border=true" /></a>
+  <!-- <a href="http://www.github.com/gustavo137"><img src="https://github-readme-streak-stats.herokuapp.com/?user=gustavo137&stroke=ffffff&background=1c1917&ring=0891b2&fire=0891b2&currStreakNum=ffffff&currStreakLabel=0891b2&sideNums=ffffff&sideLabels=ffffff&dates=ffffff&hide_border=true" /></a> -->
 </p>
 
 <!-- [![gustavo137's GitHub summary](https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=gustavo137&theme=github_dark)](https://github.com/gustavo137) -->
