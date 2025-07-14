@@ -213,14 +213,14 @@ nnoremap <c-k> <c-w>k
 nnoremap <c-h> <c-w>h
 nnoremap <c-l> <c-w>l
 
-"esize split windows using arrow keys by pressing:
+"Resize split windows using arrow keys by pressing:
 " CTRL+UP, CTRL+DOWN, CTRL+LEFT, or CTRL+RIGHT.
 nnoremap <C-S-UP> <C-w>+
 nnoremap <C-S-Down> <C-w>-
-nnoremap <C-S-Left> <C-w>>
-nnoremap <C-S-Right> <C-w><
+nnoremap <C-S-Left> <C-w><
+nnoremap <C-S-Right> <C-w>>
 
-" Resize split windows using the arrow keys.
+" Change the split windows position  using the arrow keys.
 nnoremap <leader>H :silent wincmd H<CR>
 nnoremap <leader>L :silent wincmd L<CR>
 nnoremap <leader>K :silent wincmd K<CR>
