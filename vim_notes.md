@@ -90,4 +90,9 @@ In order to use `OpenPreview` and `StopPreview`, you need to install the \[Insta
 brew install node
 npm install -g instant-markdown-d
 ```
+### Colapse all sections and uncollapse the section
 
+```bash 
+z + shift , R # Collapse all sections
+z + shift , M # Uncollapse all sections
+```
