@@ -215,10 +215,17 @@ nnoremap <c-l> <c-w>l
 
 "esize split windows using arrow keys by pressing:
 " CTRL+UP, CTRL+DOWN, CTRL+LEFT, or CTRL+RIGHT.
-nnoremap <c-up> <c-w>+
-nnoremap <c-down> <c-w>-
-nnoremap <c-left> <c-w>>
-nnoremap <c-right> <c-w><
+nnoremap <C-S-UP> <C-w>+
+nnoremap <C-S-Down> <C-w>-
+nnoremap <C-S-Left> <C-w>>
+nnoremap <C-S-Right> <C-w><
+
+" Resize split windows using the arrow keys.
+nnoremap <leader>H :silent wincmd H<CR>
+nnoremap <leader>L :silent wincmd L<CR>
+nnoremap <leader>K :silent wincmd K<CR>
+nnoremap <leader>J :silent wincmd J<CR>
+
 
 " NERDTree specific mappings 
 " Map the F2 key to toggle NERDTree open and close.
