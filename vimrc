@@ -2,6 +2,8 @@ set number relativenumber " Show line numbers in relative position. The current 
 
 syntax on                 " Enable sytax highlighting.
 
+set mouse=a            " Enable mouse support in all modes.
+
 set relativenumber        " Show relative line numbers. The current line will be in absolute number.
 
 set undofile              " Enable persitent undo to allow undo history even after closing Vim
