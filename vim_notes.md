@@ -22,6 +22,16 @@ This is a good docs for learning vim please read [vim-docs](https://www.tutorial
 | `\h`          | Browse recent files (`:browse oldfiles`) |
 | \`\`\`        | Jump to last cursor position (` `` `)    |
 | `<Space>`     | Enter command mode (`:`)                 |
+| `w`           | Move the crsor to the beginning of the next word |
+| `W`         | Similar to `w`, but ignores punctuation and moves between spaces. |
+| `b`           | Move the cursor to the beginning of the previous word |
+| `B`           | Similar to `b`, but ignores punctuation and moves between spaces. |
+| `e`           | Move the cursor to the end of the current word |
+| `0`           | Move the cursor to the beginning of the line |
+| `$`           | Move the cursor to the end of the line   |
+| `gg`          | Move the cursor to the top of the file   |
+| `ge`          | Move the cursor to the end of the previous word |
+
 
 ### 🪄 Editing mappings
 
@@ -96,3 +106,12 @@ npm install -g instant-markdown-d
 z + shift , R # Collapse all sections
 z + shift , M # Uncollapse all sections
 ```
+### In the server
+
+In the server we need to install the plugins using the following command:
+
+```bash
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+```
+Then inside vim we can use PlugInstall to install the plugins, PlugUpdate to update the plugins, and PlugClean to remove unused plugins, etc.
