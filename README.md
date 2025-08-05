@@ -3,7 +3,7 @@
 ============================================================ -->
 
 ### Master's student in High-Performance Computing at ICTP/SISSA  
-#### Particle Physics Researcher | PhD Candidate in Theoretical Physics  
+#### PhD in Theoretical Physics  
 
 - 🌍 I'm based in Trieste, Italy  
 - ✉️ You can contact me at [gparedes@ictp.it](mailto:gparedes@ictp.it)  
