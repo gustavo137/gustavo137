@@ -2,11 +2,12 @@ set number relativenumber " Show line numbers in relative position. The current 
 
 syntax on                 " Enable sytax highlighting.
 
-set mouse=a            " Enable mouse support in all modes.
+set mouse=a               " Enable mouse support in all modes.
 
-set clipboard=unnamedplus " Use the system clipboard for copy and paste operations.
+" This comand modify the normal mode mapping of the y key.
+"set clipboard=unnamedplus " Use the system clipboard for copy and paste operations.
 
-set relativenumber        " Show relative line numbers. The current line will be in absolute number.
+set relativenumber        " how relative line numbers. The current line will be in absolute number.
 
 set undofile              " Enable persitent undo to allow undo history even after closing Vim
 
@@ -145,7 +146,7 @@ nnoremap <leader>ya gg"+yG
 " paste from the clipboard in normal mode.
 nnoremap <leader>p "+p
 " -------------
-
+  
 " bind <leader>w to :NERDTreeRefreshRoot<CR>
 nnoremap <leader>w :NERDTreeRefreshRoot<CR>
 
@@ -206,7 +207,7 @@ nnoremap ; :
 nnoremap n nzz
 nnoremap N Nzz
 
-" Yank from cursor to the end of line. 
+"  Yank from cursor to the end of line. 
 nnoremap Y y$
 
 " Map the F5 key to run a Python script inside Vim. 
