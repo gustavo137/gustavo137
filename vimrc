@@ -4,6 +4,8 @@ syntax on                 " Enable sytax highlighting.
 
 set mouse=a            " Enable mouse support in all modes.
 
+set clipboard=unnamedplus " Use the system clipboard for copy and paste operations.
+
 set relativenumber        " Show relative line numbers. The current line will be in absolute number.
 
 set undofile              " Enable persitent undo to allow undo history even after closing Vim
@@ -130,6 +132,20 @@ let g:gruvbox_contrast_dark = 'hard'
 " Bind jj to esc   
 inoremap jj <esc>
 
+" -------------
+" Bind to copy to the clipboard a line or visual selection.
+vnoremap <leader>y "+y
+
+" copy a line to the clipboard in normal mode.
+nnoremap <leader>y "+yy
+
+" copy the entire file to the clipboard in normal mode.
+nnoremap <leader>ya gg"+yG
+
+" paste from the clipboard in normal mode.
+nnoremap <leader>p "+p
+" -------------
+
 " bind <leader>w to :NERDTreeRefreshRoot<CR>
 nnoremap <leader>w :NERDTreeRefreshRoot<CR>
 
@@ -217,10 +233,17 @@ nnoremap <c-l> <c-w>l
 
 "Resize split windows using arrow keys by pressing:
 " CTRL+UP, CTRL+DOWN, CTRL+LEFT, or CTRL+RIGHT.
+" ---  This combinations is for macOS.
 nnoremap <C-S-UP> <C-w>+
 nnoremap <C-S-Down> <C-w>-
 nnoremap <C-S-Left> <C-w><
 nnoremap <C-S-Right> <C-w>>
+" ---  This combinations is for Linux.
+"nnoremap <C-Up> <C-w>+
+"nnoremap <C-Down> <C-w>-
+"nnoremap <C-Left> <C-w><
+"nnoremap <C-Right> <C-w>>
+
 
 " Change the split windows position  using the arrow keys.
 nnoremap <leader>H :silent wincmd H<CR>
