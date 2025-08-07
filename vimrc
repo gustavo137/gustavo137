@@ -92,8 +92,15 @@ call plug#begin('~/.vim/plugged')
                                   " $ sudo apt install nodejs npm 
                                   " $ sudo npm install -g bash-language-server
     " Plug 'jayli/vim-easycomplete'
-    Plug 'suan/vim-instant-markdown' " This will require vim-instant-markdown:
+    
+    " Only load vim-instant-markdown on your local machine
+    " Solo cargar vim-instant-markdown en tu máquina local
+    " This aboid login0i on galileo and login0i.leonardo.local
+    if hostname() !~# '^login\d\+\(\.leonardo\.local\)\?$'
+     Plug 'suan/vim-instant-markdown' " This will require vim-instant-markdown:
+    endif
                                      " $ sudo npm install -g instant-markdown-d
+
                                      "
     Plug 'tpope/vim-commentary'      " Easy code commenting. Heres how to use :
                                      " gcc ----> comment/uncomment a line 
