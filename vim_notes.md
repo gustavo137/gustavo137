@@ -17,7 +17,7 @@ This is a good docs for learning vim please read [vim-docs](https://www.tutorial
 | `\d`          | Disable ALE linter                       |
 | `\e`          | Enable ALE linter                        |
 | `\o`          | Open Instant Markdown preview            |
-| `\p`          | Stop Instant Markdown preview            |
+| `\c`          | Stop Instant Markdown preview            |
 | `\\`          | Turn off search highlight                |
 | `\h`          | Browse recent files (`:browse oldfiles`) |
 | \`\`\`        | Jump to last cursor position (` `` `)    |
@@ -31,8 +31,10 @@ This is a good docs for learning vim please read [vim-docs](https://www.tutorial
 | `$`           | Move the cursor to the end of the line   |
 | `gg`          | Move the cursor to the top of the file   |
 | `ge`          | Move the cursor to the end of the previous word |
-
-
+| `\y="+y`      | Bind to copy to the clipboard a line or visual selection.|
+| `\y="+yy`     | copy a line to the clipboard in normal mode |
+| `\p="+p`      | Paste from the clipboard in normal mode.           |
+| `\ya=gg"+yG`  | Copy the entire file to the clipboard in normal mode. |
 ### 🪄 Editing mappings
 
 | Shortcut | Description                           |

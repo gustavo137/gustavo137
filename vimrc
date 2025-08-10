@@ -182,7 +182,7 @@ nnoremap <leader>e :ALEEnable<CR>
 nnoremap <Leader>o :InstantMarkdownPreview<CR> 
 
 " Map <Leader>c to close Instant Markdown Preview (kill the server)
-nnoremap <Leader>p :InstantMarkdownStop<CR>
+nnoremap <Leader>c :InstantMarkdownStop<CR>
 
 "For rendering equation in markdown using MathJax.                
 let g:instant_markdown_mathjax = 1
