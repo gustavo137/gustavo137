@@ -11,6 +11,23 @@ This is a good docs for learning vim please read [vim-docs](https://www.tutorial
 | fg        | (type from the terminal) Return to vim from terminal.   |
 | ca", ca{, ca[, ca(, etc. | Change the text inside quotes, braces, brackets, etc. |
 | ci", ci{, ci[, ci(, etc. | Change the text inside quotes, braces, brackets, etc. (without the closing character) |
+| ciw, cw, c3w | Change the word under the cursor.                     |
+| _   | to go to the first character of the line.         |
+|  n>> | to indent n lines |
+|  n<< | to unindent n lines |
+| cntrl + b | to move one  page up. |
+| cntrl + f | to move one page down. |
+| cntrl + d | to move half a page down. |
+| cntrl + u | to move half a page up. |
+| zt | to move the current line to the top of the screen. |
+| zz | to move the current line to the center of the screen. |
+| zb | to move the current line to the bottom of the screen. |
+
+### :%s/world/new_world/gc
+This is not a good idea to map it, so is better to learn it.
+
+
+### learns macros 
 
 ### 🔑 General mappings
 
