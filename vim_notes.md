@@ -6,30 +6,39 @@ This is a good docs for learning vim please read [vim-docs](https://www.tutorial
 ### 📖 General Vim Commands
 | Shortcut  | Description                                             |
 | --------- | ------------------------------------------------------- |
-| Switch to terminal | `:terminal` or `:term` (from vim)              |
-| cntrl + z | Suspend vim and return to terminal.                     |
-| fg        | (type from the terminal) Return to vim from terminal.   |
-| ca", ca{, ca[, ca(, etc. | Change the text inside quotes, braces, brackets, etc. |
-| ci", ci{, ci[, ci(, etc. | Change the text inside quotes, braces, brackets, etc. (without the closing character) |
-| ciw, cw, c3w | Change the word under the cursor.                     |
-| _   | to go to the first character of the line.         |
-|  n>> | to indent n lines |
-|  n<< | to unindent n lines |
-| cntrl + b | to move one  page up. |
-| cntrl + f | to move one page down. |
-| cntrl + d | to move half a page down. |
-| cntrl + u | to move half a page up. |
-| zt | to move the current line to the top of the screen. |
-| zz | to move the current line to the center of the screen. |
-| zb | to move the current line to the bottom of the screen. |
+| `Switch to terminal` | `:terminal` or `:term` (from vim)              |
+| `cntrl + z` | Suspend vim and return to terminal.                     |
+| `fg       ` | (type from the terminal) Return to vim from terminal.   |
+| `ca", ca{, ca[, ca(, etc.` | Change the text inside quotes, braces, brackets, etc. |
+| `ci", ci{, ci[, ci(, etc.` | Change the text inside quotes, braces, brackets, etc. (without the closing character) |
+| `ciw, cw, c3w` | Change the word under the cursor.                     |
+| `_  ` | to go to the first character of the line.         |
+| ` n>>` | to indent n lines |
+| ` n<<` | to unindent n lines |
+| `cntrl + b` | to move one  page up. |
+| `cntrl + f` | to move one page down. |
+| `cntrl + d` | to move half a page down. |
+| `cntrl + u` | to move half a page up. |
+| `zt` | to move the current line to the top of the screen. |
+| `zz` | to move the current line to the center of the screen. |
+| `zb` | to move the current line to the bottom of the screen. |
+| `w`           | Move the crsor to the beginning of the next word |
+| `W`         | Similar to `w`, but ignores punctuation and moves between spaces. |
+| `b`           | Move the cursor to the beginning of the previous word |
+| `B`           | Similar to `b`, but ignores punctuation and moves between spaces. |
+| `e`           | Move the cursor to the end of the current word |
+| `0`           | Move the cursor to the beginning of the line |
+| `$`           | Move the cursor to the end of the line   |
+| `gg`          | Move the cursor to the top of the file   |
+| `gt`          | Next tab (`:tabnext`) "go to"            |
+| `gT`         | Previous tab (`:tabprevious`) "go to"   |
 
 ### :%s/world/new_world/gc
 This is not a good idea to map it, so is better to learn it.
 
+### learns macros  EYE
 
-### learns macros 
-
-### 🔑 General mappings
+### 🔑 My mappings
 
 | Shortcut      | Description                              |
 | ------------- | ---------------------------------------- |
@@ -39,7 +48,6 @@ This is not a good idea to map it, so is better to learn it.
 | `\q`          | Open new tab (`:tabnew`)                 |
 | `gr`          | Next buffer (`:bnext`)                   |
 | `gR`          | Previous buffer (`:bprevious`)           |
-| `gt`          | Next tab (`:tabnext`) "go to"            |
 | `\d`          | Disable ALE linter                       |
 | `\e`          | Enable ALE linter                        |
 | `\o`          | Open Instant Markdown preview            |
@@ -48,14 +56,6 @@ This is not a good idea to map it, so is better to learn it.
 | `\h`          | Browse recent files (`:browse oldfiles`) |
 | \`\`\`        | Jump to last cursor position (` `` `)    |
 | `<Space>`     | Enter command mode (`:`)                 |
-| `w`           | Move the crsor to the beginning of the next word |
-| `W`         | Similar to `w`, but ignores punctuation and moves between spaces. |
-| `b`           | Move the cursor to the beginning of the previous word |
-| `B`           | Similar to `b`, but ignores punctuation and moves between spaces. |
-| `e`           | Move the cursor to the end of the current word |
-| `0`           | Move the cursor to the beginning of the line |
-| `$`           | Move the cursor to the end of the line   |
-| `gg`          | Move the cursor to the top of the file   |
 | `ge`          | Move the cursor to the end of the previous word |
 | `\y="+y`      | Bind to copy to the clipboard a line or visual selection.|
 | `\y="+yy`     | copy a line to the clipboard in normal mode |
