@@ -3,6 +3,12 @@ By Gustavo Paredes based om [Vim-guide](https://www.freecodecamp.org/news/vimrc-
 
 This is a good docs for learning vim please read [vim-docs](https://www.tutorialspoint.com/vim/index.htm).
 
+### 📖 Switching between vim and terminal
+| Shortcut  | Description                                             |
+| --------- | ------------------------------------------------------- |
+| cntrl + z | Suspend vim and return to terminal.                     |
+| fg        | (type from the terminal) Return to vim from terminal.   |
+
 ### 🔑 General mappings
 
 | Shortcut      | Description                              |
@@ -35,6 +41,7 @@ This is a good docs for learning vim please read [vim-docs](https://www.tutorial
 | `\y="+yy`     | copy a line to the clipboard in normal mode |
 | `\p="+p`      | Paste from the clipboard in normal mode.           |
 | `\ya=gg"+yG`  | Copy the entire file to the clipboard in normal mode. |
+
 ### 🪄 Editing mappings
 
 | Shortcut | Description                           |
