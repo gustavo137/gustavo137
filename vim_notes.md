@@ -3,11 +3,14 @@ By Gustavo Paredes based om [Vim-guide](https://www.freecodecamp.org/news/vimrc-
 
 This is a good docs for learning vim please read [vim-docs](https://www.tutorialspoint.com/vim/index.htm).
 
-### 📖 Switching between vim and terminal
+### 📖 General Vim Commands
 | Shortcut  | Description                                             |
 | --------- | ------------------------------------------------------- |
+| Switch to terminal | `:terminal` or `:term` (from vim)              |
 | cntrl + z | Suspend vim and return to terminal.                     |
 | fg        | (type from the terminal) Return to vim from terminal.   |
+| ca", ca{, ca[, ca(, etc. | Change the text inside quotes, braces, brackets, etc. |
+| ci", ci{, ci[, ci(, etc. | Change the text inside quotes, braces, brackets, etc. (without the closing character) |
 
 ### 🔑 General mappings
 
