@@ -132,8 +132,13 @@ npm install -g instant-markdown-d
 ### Colapse all sections and uncollapse the section
 
 ```bash 
-z + shift , R # Collapse all sections
-z + shift , M # Uncollapse all sections
+zR # Collapse all sections (folds)
+zM # Uncollapse all sections (folds)
+zo # Uncollapse the current section (fold)
+zc # Collapse the current section (fold)
+za # Toggle the current section (fold)
+zO # Uncollapse all sections (folds) recursively
+zC # Collapse all sections (folds) recursively
 ```
 ### In the server
 
