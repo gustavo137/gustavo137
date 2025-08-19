@@ -166,6 +166,13 @@ nnoremap <leader>s :source ~/.vimrc<CR>
 " bind <leader>q to :tabnew<CR>
 nnoremap <leader>q :tabnew<CR>
 
+" Comment fortran selected lines in visual mode.
+"xnoremap <leader>c :s/^\s*/&! /<CR>
+
+" Uncomment fortran  selected lines in visual mode.
+"xnoremap <leader>u :s/^\(\s*\)! *//<CR>
+
+
 " Bind gr to :bnext<CR>
 nnoremap gr :bnext<CR>
 
@@ -181,8 +188,9 @@ nnoremap <leader>e :ALEEnable<CR>
 " Map \o to open the Instant Markdown Preview 
 nnoremap <Leader>o :InstantMarkdownPreview<CR> 
 
-" Map <Leader>c to close Instant Markdown Preview (kill the server)
-nnoremap <Leader>c :InstantMarkdownStop<CR>
+" Map <Leader>m to close Instant Markdown Preview (kill the server). before
+" was <Leader>c
+nnoremap <Leader>m :InstantMarkdownStop<CR>
 
 "For rendering equation in markdown using MathJax.                
 let g:instant_markdown_mathjax = 1
