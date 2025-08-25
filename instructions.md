@@ -382,3 +382,12 @@ We now have the cp2k.out file containing all the information.
 # JUPITER 
 
 Here you can find some notes of how to use jupiter Slides of the talk by Jens Henrik Göbbert [jupiter-slides](https://www.fz-juelich.de/en/ias/jsc/news/events/training-courses/2023/supercomputing-1/04-jupyterlab) in general this is the course [curse-slides](https://www.fz-juelich.de/en/ias/jsc/education/training-courses/training-materials/course-material-sc-introduction-may-23) and [jupiter](https://gitlab.jsc.fz-juelich.de/jupyter4jsc/prace-2022.04-jupyter4hpc/-/tree/main/).
+
+# Resources
+
+To check the current QOS settings in JURECA, you can use the following command:
+```bash
+$ queueu --me or squeue -u $USER
+$ sacctmgr # show qos format=Name,MaxSubmitJobs,MaxJobs,MaxWall,MaxTRESPU%30
+$ sacctmgr # show associations user=$USER format=User,Account,Partition,QOS
+```
