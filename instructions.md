@@ -387,7 +387,7 @@ Here you can find some notes of how to use jupiter Slides of the talk by Jens He
 
 To check the current QOS settings in JURECA, you can use the following command:
 ```bash
-$ queueu --me or squeue -u $USER
+$ squeue --me or squeue -u $USER
 $ sacctmgr # show qos format=Name,MaxSubmitJobs,MaxJobs,MaxWall,MaxTRESPU%30
 $ sacctmgr # show associations user=$USER format=User,Account,Partition,QOS
 ```
