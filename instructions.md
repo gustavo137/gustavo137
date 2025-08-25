@@ -390,4 +390,9 @@ To check the current QOS settings in JURECA, you can use the following command:
 $ squeue --me or squeue -u $USER
 $ sacctmgr show qos format=Name,MaxSubmitJobs,MaxJobs,MaxWall,MaxTRESPU%30
 $ sacctmgr associations user=$USER format=User,Account,Partition,QOS
+jutil user projects -u $USER
+jutil user cpuquota -u $USER -p jureap141
+jutil user dataquota -u $USER -p jureap141
+
 ```
+
