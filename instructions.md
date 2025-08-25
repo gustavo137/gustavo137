@@ -17,7 +17,7 @@ In this case I will use the `console work`.
 
 ### ssh connection to jureca 
 Follow this documnetation to connect to judac  [judac documentation](https://apps.fz-juelich.de/jsc/hps/judac/access.html) and jureca
-[jureca documentation](https://apps.fz-juelich.de/jsc/hps/jureca/index.html).
+[jureca documentation](https://apps.fz-juelich.de/jsc/hps/jureca/index.html), [juwels](https://apps.fz-juelich.de/jsc/hps/juwels/access.html).
 
 ### jupiter docs 
 
