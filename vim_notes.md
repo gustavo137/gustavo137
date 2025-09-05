@@ -22,7 +22,7 @@ This is a good docs for learning vim please read [vim-docs](https://www.tutorial
 | `zt` | to move the current line to the top of the screen. |
 | `zz` | to move the current line to the center of the screen. |
 | `zb` | to move the current line to the bottom of the screen. |
-| `w`           | Move the crsor to the beginning of the next word |
+| `w`           | Move the cursor to the beginning of the next word |
 | `W`         | Similar to `w`, but ignores punctuation and moves between spaces. |
 | `b`           | Move the cursor to the beginning of the previous word |
 | `B`           | Similar to `b`, but ignores punctuation and moves between spaces. |
@@ -94,6 +94,8 @@ This is not a good idea to map it, so is better to learn it.
 | `<C-h>`  | Move left   |
 | `<C-l>`  | Move right  |
 
+
+**Note**: When we open a new terminal using `:terminal` or `\t`, we can use `control + w` then `j`, `k`, `h`, or `l` to navigate between splits.
 ### 🔧 Resize splits (macOS safe)
 
 | Shortcut      | Description     |
