@@ -97,7 +97,7 @@ This is not a good idea to map it, so is better to learn it.
 
 **Note**: When we open a new terminal using `:terminal` or `\t`, we can use `control + w` then `j`, `k`, `h`, or `l` to navigate between splits.
 ### 🔧 Resize splits (macOS safe)
-
+The `C-S` means Control + Shift.
 | Shortcut      | Description     |
 | ------------- | --------------- |
 | `<C-S-Up>`    | Increase height |
@@ -105,6 +105,14 @@ This is not a good idea to map it, so is better to learn it.
 | `<C-S-Left>`  | Increase width  |
 | `<C-S-Right>` | Decrease width  |
 
+### 🔧 Resize splits (linux)
+
+| Shortcut      | Description     |
+| ------------- | --------------- |
+| `<C-Up>`    | Increase height |
+| `<C-Down>`  | Decrease height |
+| `<C-Left>`  | Increase width  |
+| `<C-Right>` | Decrease width  |
 ### 🏗️ Move split positions
 
 | Shortcut | Description                 |

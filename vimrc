@@ -66,7 +66,9 @@ set updatetime=300
 " Wildmenu will ignore files with these extensions. 
 set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx,*.mod
 
-            
+" Variable for fortran install:
+let fortran_dep_install=3
+
 " PLUGINS ---------------------------------------------------------------------------------- 
 " Installing plugins will require plugin managers. I used vim-plug which I
 " installed using the command in bash: 
@@ -248,13 +250,14 @@ nnoremap <c-h> <c-w>h
 nnoremap <c-l> <c-w>l
 
 "Resize split windows using arrow keys by pressing:
-" CTRL+UP, CTRL+DOWN, CTRL+LEFT, or CTRL+RIGHT.
+" CTRL+SHIFT+UP, CTRL+SHIFT+DOWN, CTRL+SHIFT+LEFT, or CTRL+SHIFT+RIGHT.
 " ---  This combinations is for macOS.
 nnoremap <C-S-UP> <C-w>+
 nnoremap <C-S-Down> <C-w>-
 nnoremap <C-S-Left> <C-w><
 nnoremap <C-S-Right> <C-w>>
 " ---  This combinations is for Linux.
+" CTRL+UP, CTRL+DOWN, CTRL+LEFT, or CTRL+RIGHT.
 "nnoremap <C-Up> <C-w>+
 "nnoremap <C-Down> <C-w>-
 "nnoremap <C-Left> <C-w><
