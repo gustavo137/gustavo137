@@ -33,10 +33,13 @@ This is a good docs for learning vim please read [vim-docs](https://www.tutorial
 | `gt`          | Next tab (`:tabnext`) "go to"            |
 | `gT`         | Previous tab (`:tabprevious`) "go to"   |
 
-### :%s/world/new_world/gc
+### Replace all occurrences of a word in the file
+```bash
+:%s/world/new_world/gc
+```
 This is not a good idea to map it, so is better to learn it.
 
-### learns macros  EYE
+### Learns macros  EYE
 
 ### 🔑 My mappings
 
@@ -55,7 +58,7 @@ This is not a good idea to map it, so is better to learn it.
 | `\\`          | Turn off search highlight                |
 | `\h`          | Browse recent files (`:browse oldfiles`) |
 | \`\`\`        | Jump to last cursor position (` `` `)    |
-| `<Space>`     | Enter command mode (`:`)                 |
+| `:`           | Enter command mode (`:`)                 |
 | `ge`          | Move the cursor to the end of the previous word |
 | `\y="+y`      | Bind to copy to the clipboard a line or visual selection.|
 | `\y="+yy`     | copy a line to the clipboard in normal mode |
