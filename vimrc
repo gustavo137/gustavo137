@@ -174,6 +174,11 @@ nnoremap <leader>q :tabnew<CR>
 " Uncomment fortran  selected lines in visual mode.
 "xnoremap <leader>u :s/^\(\s*\)! *//<CR>
 
+" === Copilot key bindings ===
+nnoremap <leader>ce :Copilot enable<CR>
+nnoremap <leader>cd :Copilot disable<CR>
+nnoremap <leader>cs :Copilot status<CR>
+
 
 " Bind gr to :bnext<CR>
 nnoremap gr :bnext<CR>
