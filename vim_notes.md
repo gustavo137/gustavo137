@@ -161,4 +161,44 @@ In the server we need to install the plugins using the following command:
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 ```
-Then inside vim we can use PlugInstall to install the plugins, PlugUpdate to update the plugins, and PlugClean to remove unused plugins, etc.
+Then inside vim we can use PlugInstall to install the plugins, PlugUpdate to update the plugins, and PlugClean to remove unused plugins, etc. Check the file [`install_local_vim_server.md`](install_local_vim_server.md) for more details, in this instrucctions you will install vim in the server as local and also node.js.
+
+### Copilot
+
+To enable copilot follow the intructions:
+
+| Action                           | Command                   | Scope               |
+| -------------------------------- | ------------------------- | ------------------- |
+| Disable Copilot globally         | `:Copilot disable`        | All buffers         |
+| Enable Copilot globally          | `:Copilot enable`         | All buffers         |
+| Disable Copilot for current file | `:Copilot disable buffer` | Current buffer      |
+| Enable Copilot for current file  | `:Copilot enable buffer`  | Current buffer      |
+| Check status                     | `:Copilot status`         | Shows current state |
+
+```bash 
+:Copilot status
+```
+
+Posible outputs:
+
+- Copilot: Ready → active
+- Copilot: Disabled globally → global stop
+- Copilot: Disabled for buffer → local stop
+
+#### Mappings for copilot
+You can add these shortcuts to your vimrc to make copilot easier to use:
+```vim
+" === Copilot key bindings ===
+nnoremap <leader>ce :Copilot enable<CR>
+nnoremap <leader>cd :Copilot disable<CR>
+nnoremap <leader>cs :Copilot status<CR>
+```
+Then use:
+```vim
+<leader>ce → enable Copilot
+<leader>cd → disable Copilot
+<leader>cs → check status
+```
+(Your <leader> key is usually \ or , depending on your setup, in this setup [`vimrc`](vimrc).)
+
+
