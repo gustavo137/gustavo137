@@ -1,0 +1,12 @@
+To compile use:
+```c
+clang -Xpreprocessor -fopenmp test.c -I/usr/local/opt/libomp/include -L/usr/local/opt/libomp/lib -lomp -o test.x
+```
+No usar -fopenmp
+```c
+clang pi_v1.c -I/usr/local/opt/libomp/include -L/usr/local/opt/libomp/lib -lomp -o pi_v1.x
+```
+Simple compilacion:
+```c
+clang pi_v1.c -I/usr/local/opt/libomp/include -o pi_v1.x
+```
