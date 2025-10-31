@@ -12,7 +12,8 @@
 #
 # To run: python3 pi.py
 from math import pi
-from time import time 
+from time import time
+
 # Computing pi in serial 
 t_start = time()
 
