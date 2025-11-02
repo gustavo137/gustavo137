@@ -16,62 +16,52 @@
 */
 #include <stdio.h>
 #include <math.h>
-
 #ifdef _OPENMP
 #include <omp.h>
 #endif
 #include <mpi.h>
-
 /* Funcion f(x) = 1 / (1 + x^2) */
 double f(double x) {
     return 1.0 / (1.0 + x * x);
 }
-
 int main(int argc, char *argv[]){
     int npes, size;    // numero de procesos
     int me=0;          // proceso master ==0
     long long int N = 100000000;    // número de intervalos
     double h = 1.0 / (double) N;    // ancho del intervalo
     double local_sum = 0.0, global_sum=0.0;
-    
     // Inicializacion de MPI
     MPI_Init(&argc, &argv);
     MPI_Comm_rank(MPI_COMM_WORLD, &npes);
     MPI_Comm_size(MPI_COMM_WORLD, &size);
-   
     // ---------------------------------------------
     // Definir el rango de integracion:
     long long int N_loc = N / size;// N local
     long long int rest  = N % size;//sobrantes
-    long long int offset; // marca desde dónde empieza cada proceso según cuántos elementos se asignaron antes.
-
+    // marca desde dónde empieza cada proceso según
+    // cuántos elementos se asignaron antes.
+    long long int offset;
     if (me < rest) {
         N_loc = N_loc + 1;
         offset = npes * N_loc;
     } else {
         offset = npes * N_loc + rest;
     }
-
     long long int start = offset;
     long long int end   = start + N_loc;
     // ---------------------------------------------
-
     // ---------------------------------------------
     // Define el rango de integración local simplificado
     /* long long int start = (N / size) * rank; */
     /* long long int end   = (rank == size - 1) ? N : (N / size) * (rank + 1); */ 
     // ---------------------------------------------
-
-
     // tiempo inicial
     double start_time = MPI_Wtime();
-
 #ifdef _OPENMP 
    if(npes==me) printf("OpenMP habilitado (%d hilos)\n", omp_get_max_threads());
 #else
    if(npes==me) printf("OpenMP no habilitado\n");
 #endif
-
     #pragma omp parallel for reduction(+:local_sum) schedule(static)
     for (long long int i = start; i < end; i++) {
        double x = (i + 0.5) * h;          // punto medio de cada subintervalo
@@ -80,10 +70,8 @@ int main(int argc, char *argv[]){
     }
     //Reduce las sumas locales en el proceso raiz
     MPI_Reduce(&local_sum,&global_sum,1,MPI_DOUBLE,MPI_SUM,0,MPI_COMM_WORLD);
-    
     // tiempo final
     double end_time = MPI_Wtime();
-
     // Solo el rank 0 (master) imprime
     if (npes==me) {
         double pi_approx = 4.0 * h* global_sum;
