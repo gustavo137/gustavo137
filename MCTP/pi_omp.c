@@ -24,12 +24,12 @@ double f(double x) {
 
 int main(void)
 {
-    long long int N = 100000000;    // número de intervalos
+    int N = 100000000;    // número de intervalos
     double h = 1.0 / (double) N;    // ancho del intervalo
     double sum = 0.0;
     double x;
-    #pragma omp parallel for reduction(+:sum) private(x) schedule(static)
-    for (long long int i = 0; i < N; i++) {
+    #pragma omp parallel for default(none) private(x) shared(N, h) reduction(+:sum) schedule(static)
+    for (int i = 0; i < N; i++) {
         x = (i + 0.5) * h;          // punto medio de cada subintervalo
         /* sum += 1.0 / (1.0 + x * x); */
         sum += f(x);
