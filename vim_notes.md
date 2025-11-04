@@ -2,6 +2,8 @@
 By Gustavo Paredes based om [Vim-guide](https://www.freecodecamp.org/news/vimrc-configuration-guide-customize-your-vim-editor/).
 
 This is a good docs for learning vim please read [vim-docs](https://www.tutorialspoint.com/vim/index.htm).
+### Look for a command in terminal
+To look for a command in terminal we use `control + r` and then type the command we are looking for.
 
 ### 📖 General Vim Commands
 | Shortcut  | Description                                             |
