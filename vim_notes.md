@@ -203,4 +203,17 @@ Then use:
 ```
 (Your <leader> key is usually \ or , depending on your setup, in this setup [`vimrc`](vimrc).)
 
+# Copy from server using rsync
+To copy files from server to local machine using rsync use the following command:
+```bash
+# Copy the entire folder
+rsync -avzP server:/path/folder .
+# Copy the content of the folder
+rsync -avzP server:/path/folder/* .
+```
+Where:
+-a preserves permissions, timestamps, symbolic links, etc.
+-v enables verbose mode to see the progress.
+-z compresses the data during transfer.
+-P shows progress during transfer and allows resuming interrupted transfers.
 
