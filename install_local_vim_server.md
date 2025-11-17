@@ -64,3 +64,11 @@ export PATH="$HOME/local/node/bin:$PATH"
 echo 'export PATH="$HOME/local/node/bin:$PATH"' >> $HOME/.bashrc
 source $HOME/.bashrc # or source $HOME/.zshrc
 ```
+
+## Setup copilot
+To set up GitHub Copilot in your local Vim installation we go to vim and in the comand line we type:
+```vim
+:Copilot setup
+```
+This will open a browser window to authenticate with GitHub. Follow the prompts to complete the setup.
+Make sure you have the pluggin installed and configured in your vimrc file. 
