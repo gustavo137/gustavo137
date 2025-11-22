@@ -1,4 +1,5 @@
 To compile use:
+g++ for cpp and gcc for c files.
 ```c
 clang -Xpreprocessor -fopenmp test.c -I/usr/local/opt/libomp/include -L/usr/local/opt/libomp/lib -lomp -o test.x
 ```

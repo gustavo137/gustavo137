@@ -16,6 +16,9 @@
 #include <stdio.h>
 #include <math.h>
 #include <omp.h>
+// compilar con: gcc -fopenmp -o pi_omp pi_omp.c
+// ejecutar con: time ./pi_omp
+// export OMP_NUM_THREADS=4   # para usar 4 hilos
 
 /* Funcion f(x) = 1 / (1 + x^2) */
 double f(double x) {
