@@ -19,6 +19,7 @@
 #ifdef _OPENMP
 #include <omp.h>
 #endif
+// #ifdef _MPI
 #include <mpi.h>
 /* Funcion f(x) = 1 / (1 + x^2) */
 double f(double x) {
