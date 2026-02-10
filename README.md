@@ -3,11 +3,11 @@
 ============================================================ -->
 
 ### Master's student in High-Performance Computing at ICTP/SISSA  
-#### PhD in Theoretical Physics  
+#### PhD in Physics  
 
 - 🌍 I'm based in Trieste, Italy  
-- ✉️ You can contact me at [gparedes@ictp.it](mailto:gparedes@ictp.it)  
-- 🧠 I'm learning ML, DL, CUDA C++  
+- ✉️  You can contact me at [gparedes@ictp.it](mailto:gparedes@ictp.it)  
+- 🧠 I'm learning MPI, OpenMP, OpenACC, CUDA, and more!  
 - 🤝 I'm open to collaborating on HPC and Physics projects  
 - ⚡ I like techno music, so let's rave!  
 
