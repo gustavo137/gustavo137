@@ -8,11 +8,11 @@
 <a href="https://www.linkedin.com/in/gustavo-paredes-torres-8044b81a2/" target="_blank"> <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/linkedin.svg" width="32" height="32" /></a>
 </p>
 
-### Master's student in High-Performance Computing at ICTP/SISSA  
-### PhD in Physics  
+### MSc. in High Performance Computing (MHPC), ICTP/SISSA  
+### PhD in Physics, University of Michoacán (UMSNH)
 
-- 🌍 I'm based in Trieste, Italy.
-- ✉️  You can contact me at [gparedes@ictp.it](mailto:gparedes@ictp.it)  
+- 🌍 I'm based in Ostrava Czech Republic.
+- ✉️  You can contact me at [patogu95@gmail.com](mailto:patogu95@gmail.com)  
 - 🧠 I'm learning MPI, OpenMP, OpenACC, CUDA, and more!  
 - 🤝 I'm open to collaborating on HPC and Physics projects.  
 <!-- - ⚡ I like techno music, so let's rave! --> 
