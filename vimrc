@@ -102,7 +102,11 @@ call plug#begin('~/.vim/plugged')
      " Plug 'suan/vim-instant-markdown' " This will require vim-instant-markdown:
     " endif
     " This is for karolina server:
-    if hostname() !~# '^login\d\+\(\.karolina\)\?\(\.local\)\?$'
+    " if hostname() !~# '^login\d\+\(\.karolina\)\?\(\.local\)\?$'
+     " Plug 'suan/vim-instant-markdown'
+    " endif
+    " Geral form to avoid installing vim-instant-markdown on remote servers.
+    if hostname() !~# '^login'
      Plug 'suan/vim-instant-markdown'
     endif
                                      " $ sudo npm install -g instant-markdown-d
