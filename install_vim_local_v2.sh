@@ -52,6 +52,12 @@ fi
 echo ">>> Python 3 configuration directory:"
 echo "$PYTHON3_CONFIG_DIR"
 
+echo "linking the correct version of ncurses "
+if [ -n "${EBROOTNCURSES:-}" ]; then
+    export CPPFLAGS="-I$EBROOTNCURSES/include ${CPPFLAGS:-}"
+    export LDFLAGS="-L$EBROOTNCURSES/lib -Wl,-rpath,$EBROOTNCURSES/lib ${LDFLAGS:-}"
+fi
+
 echo ">>> Configuring Vim..."
 
 ./configure \
