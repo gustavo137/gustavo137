@@ -1,6 +1,6 @@
 # Instrucctions to Install a Local Vim in a Server
 
-To install a local Vim server on your machine, follow these steps in the file `install_vim_local.sh` or simple execute the `.sh` script below:
+To install a local Vim server on your machine, follow these steps in the file `install_vim_local.sh` or simple execute the `.sh` script below, note that in karolina we need to load the module ncurses/6.4-GCCcore-13.2.0 to have gcc and as versions compatible before run the script:
 ```bash
 cat <<'EOF' > install_vim_local.sh
 #!/bin/bash
@@ -45,11 +45,24 @@ echo 'export PATH="$HOME/local/vim/bin:$PATH"' >> $HOME/.bashrc
 source $HOME/.bashrc
 echo ">>> Installation complete!"
 EOF
+```
 
 ## Running the Installation Script
+```bash
 chmod +x install_vim_local.sh
 ./install_vim_local.sh
 ```
+To check that is done correctly, run:
+```bash
+source ~/.bashrc # or source ~/.zshrc
+which vim
+vim --version
+```
+This will show something like: 
+```
+~local/vim/bin/vim
+VIM - Vi IMproved 9.2 (2026 Feb 14, compiled Jul 31 2026 16:35:00)
+
 
 ## Node.js
  To use plugins that require Node.js (like coc.nvim), install Node.js locally:
