@@ -62,7 +62,7 @@ This will show something like:
 ```
 ~local/vim/bin/vim
 VIM - Vi IMproved 9.2 (2026 Feb 14, compiled Jul 31 2026 16:35:00)
-
+```
 
 ## Node.js
  To use plugins that require Node.js (like coc.nvim), install Node.js locally:
