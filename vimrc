@@ -98,8 +98,12 @@ call plug#begin('~/.vim/plugged')
     " Only load vim-instant-markdown on your local machine
     " Solo cargar vim-instant-markdown en tu máquina local
     " This aboid login0i on galileo and login0i.leonardo.local
-    if hostname() !~# '^login\d\+\(\.leonardo\.local\)\?$'
-     Plug 'suan/vim-instant-markdown' " This will require vim-instant-markdown:
+    " if hostname() !~# '^login\d\+\(\.leonardo\.local\)\?$'
+     " Plug 'suan/vim-instant-markdown' " This will require vim-instant-markdown:
+    " endif
+    " This is for karolina server:
+    if hostname() !~# '^login\d\+\(\.karolina\)\?\(\.local\)\?$'
+     Plug 'suan/vim-instant-markdown'
     endif
                                      " $ sudo npm install -g instant-markdown-d
 
